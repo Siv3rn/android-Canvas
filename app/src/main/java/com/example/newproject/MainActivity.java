@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             mCanvas.drawColor(mColorBackground);
 
             mCanvas.drawText(getString(R.string.keep_tapping),100,100,mPaintText);
-            mOffset += OFFSET;
+            mOffset = OFFSET;
         }
         else{
             if (mOffset < hawidth && mOffset < haheight){
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 mRect.set(mOffset,mOffset,width-mOffset,height-mOffset);
 
                 mCanvas.drawRect(mRect,mPaint);
-                mOffset += OFFSET;
+                mOffset = OFFSET;
 
             }
             else {
